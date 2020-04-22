@@ -1,0 +1,11 @@
+C:\Users\Psalmspire\Desktop\STARTNG\C#\Number_Guessing_Game\bin\Debug\netcoreapp3.1\Number_Guessing_Game.exe
+C:\Users\Psalmspire\Desktop\STARTNG\C#\Number_Guessing_Game\bin\Debug\netcoreapp3.1\Number_Guessing_Game.deps.json
+C:\Users\Psalmspire\Desktop\STARTNG\C#\Number_Guessing_Game\bin\Debug\netcoreapp3.1\Number_Guessing_Game.runtimeconfig.json
+C:\Users\Psalmspire\Desktop\STARTNG\C#\Number_Guessing_Game\bin\Debug\netcoreapp3.1\Number_Guessing_Game.runtimeconfig.dev.json
+C:\Users\Psalmspire\Desktop\STARTNG\C#\Number_Guessing_Game\bin\Debug\netcoreapp3.1\Number_Guessing_Game.dll
+C:\Users\Psalmspire\Desktop\STARTNG\C#\Number_Guessing_Game\bin\Debug\netcoreapp3.1\Number_Guessing_Game.pdb
+C:\Users\Psalmspire\Desktop\STARTNG\C#\Number_Guessing_Game\obj\Debug\netcoreapp3.1\Number_Guessing_Game.csprojAssemblyReference.cache
+C:\Users\Psalmspire\Desktop\STARTNG\C#\Number_Guessing_Game\obj\Debug\netcoreapp3.1\Number_Guessing_Game.AssemblyInfoInputs.cache
+C:\Users\Psalmspire\Desktop\STARTNG\C#\Number_Guessing_Game\obj\Debug\netcoreapp3.1\Number_Guessing_Game.AssemblyInfo.cs
+C:\Users\Psalmspire\Desktop\STARTNG\C#\Number_Guessing_Game\obj\Debug\netcoreapp3.1\Number_Guessing_Game.dll
+C:\Users\Psalmspire\Desktop\STARTNG\C#\Number_Guessing_Game\obj\Debug\netcoreapp3.1\Number_Guessing_Game.pdb
