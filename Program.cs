@@ -26,6 +26,8 @@ namespace Number_Guessing_Game
            if (Level == 1){
 
                Console.WriteLine("Welcome to Diffculty Level: EASY");
+               Console.WriteLine("Make a guess of the number between 1 and 10");
+               Console.WriteLine("You have 6 guesses only");
                int count = 1;
 
                
@@ -49,11 +51,13 @@ namespace Number_Guessing_Game
                                            break; 
                    }
                    else
-                   {
+                     
                        Console.WriteLine("Gameover {0} {1}.\n", count, 
                                            count == 6 ? "try" : "tries");
-                                           break;
-                   }
+                        break;
+
+                                          
+                   
                        
                    
                }
@@ -62,6 +66,8 @@ namespace Number_Guessing_Game
            else if (Level == 2){
 
                Console.WriteLine("Welcome to Diffculty Level: MEDIUM");
+               Console.WriteLine("Make a guess of the number between 1 and 20");
+               Console.WriteLine("You have 4 guesses only");
                int count = 1;
 
                
@@ -86,17 +92,20 @@ namespace Number_Guessing_Game
                        
                    }
                   else
-                   {
-                       Console.WriteLine("Gameover {0} {1}.\n", count, 
+                        Console.WriteLine("Gameover {0} {1}.\n", count, 
                                            count == 4 ? "try" : "tries");
-                                           break;
-                   }
+                        break;
+                       
+                                           
+                   
                }
            }
 
             else if (Level == 3){
 
                Console.WriteLine("Welcome to Diffculty Level: HARD");
+               Console.WriteLine("Make a guess of the number between 1 and 50");
+               Console.WriteLine("You have only 3 guesses");
                int count = 1;
 
                
@@ -121,11 +130,12 @@ namespace Number_Guessing_Game
                        
                    }
                   else
-                   {
+                        
                        Console.WriteLine("Gameover {0} {1}.\n", count, 
                                            count == 3 ? "try" : "tries");
-                                           break;
-                   }
+                        break;
+                                           
+                   
                }
            }
 
