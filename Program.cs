@@ -36,14 +36,36 @@ namespace Number_Guessing_Game
                    Console.Write("Enter a guess: ");
                Guess = int.Parse(Console.ReadLine());
 
+
+               //STAGE 1 OR EASY STAGE CODE
+
                      if ( Guess != EasyLevel)
                    {
-                       Console.WriteLine("That was wrong! Make another guess");
-                       ++count;
+                        if (count < 6)
+                        {
+
+                            Console.WriteLine("That was wrong! Make another guess");
+                            Console.WriteLine("You have made {0} {1}.\n", count, 
+                                           count == 1  ? "try" : "tries");
+                            Console.WriteLine("You have {0} {1}.\n", 6 - count, 
+                                           count == 5  ? "try left" : "tries left");    
+                            ++count;
+
+                        }
+                       
+                       else 
+                       {
+
+                           Console.WriteLine("That was wrong! Gameover!");
+                           Console.WriteLine("You have made {0} {1}.\n", count, 
+                                           count == 1  ? "tries" : "tries");
+                                       
+                            break;
+                       }
                        continue;
                        
                    }
-                   else if (Guess == EasyLevel){
+                    else if (Guess == EasyLevel){
 
                        Console.WriteLine("You got it right! The number was " + EasyLevel);
                        Console.WriteLine("It took you {0} {1}.\n", count, 
@@ -51,18 +73,14 @@ namespace Number_Guessing_Game
                                            break; 
                    }
                    else
-                     
-                       Console.WriteLine("Gameover {0} {1}.\n", count, 
-                                           count == 6 ? "try" : "tries");
-                        break;
-
-                                          
-                   
-                       
+                   {
+                       return;
+                   }
                    
                }
            }
-
+            
+            //STAGE 2 OR MEDIUM STAGE CODE
            else if (Level == 2){
 
                Console.WriteLine("Welcome to Diffculty Level: MEDIUM");
@@ -78,12 +96,28 @@ namespace Number_Guessing_Game
 
                      if ( Guess != MediumLevel)
                    {
-                       Console.WriteLine("That was wrong! Make another guess");
-                       ++count;
+                        if (count < 4)
+                        {
+
+                            Console.WriteLine("That was wrong! Make another guess");
+                            Console.WriteLine("You have made {0} {1}.\n", count, count == 1  ? "try" : "tries");
+                            Console.WriteLine("You have {0} {1}.\n", 4 - count, count == 3  ? "try left" : "tries left"); 
+                            ++count;
+
+                        }
+                       
+                       else 
+                       {
+
+                           Console.WriteLine("That was wrong! Gameover!");
+                           Console.WriteLine("You have made {0} {1}.\n", count, 
+                                           count == 4  ? "tries" : "tries");
+                            break;
+                       }
                        continue;
                        
                    }
-                   else if (Guess == MediumLevel){
+                  else if (Guess == MediumLevel){
 
                        Console.WriteLine("You got it right! The number was " + MediumLevel);
                        Console.WriteLine("It took you {0} {1}.\n", count, 
@@ -91,37 +125,54 @@ namespace Number_Guessing_Game
                                            break;
                        
                    }
-                  else
-                        Console.WriteLine("Gameover {0} {1}.\n", count, 
-                                           count == 4 ? "try" : "tries");
-                        break;
-                       
+                   else
+                   {
+                       return;
+                   }    
                                            
                    
                }
            }
 
+           //STAGE 3 OR HARD STAGE CODE
+
             else if (Level == 3){
 
                Console.WriteLine("Welcome to Diffculty Level: HARD");
                Console.WriteLine("Make a guess of the number between 1 and 50");
-               Console.WriteLine("You have only 3 guesses");
+               Console.WriteLine("You have 3 guesses only");
                int count = 1;
 
                
-               for (int i = 0; i < 3; i++){
+               for (int i = 0; i < 4; i++){
 
                    Console.Write("Enter a guess: ");
                Guess = int.Parse(Console.ReadLine());
 
                      if ( Guess != HardLevel)
                    {
-                       Console.WriteLine("That was wrong! Make another guess");
-                       ++count;
+                        if (count < 3)
+                        {
+
+                            Console.WriteLine("That was wrong! Make another guess");
+                            Console.WriteLine("You have made {0} {1}.\n", count, count == 1  ? "try" : "tries");
+                            Console.WriteLine("You have {0} {1}.\n", 3 - count, count == 2  ? "try left" : "tries left"); 
+                            ++count;
+
+                        }
+                       
+                       else 
+                       {
+
+                           Console.WriteLine("That was wrong! Gameover!");
+                           Console.WriteLine("You have made {0} {1}.\n", count, 
+                                           count == 4  ? "tries" : "tries");
+                            break;
+                       }
                        continue;
                        
                    }
-                   else if (Guess == HardLevel){
+                  else if (Guess == HardLevel){
 
                        Console.WriteLine("You got it right! The number was " + HardLevel);
                        Console.WriteLine("It took you {0} {1}.\n", count, 
@@ -129,11 +180,10 @@ namespace Number_Guessing_Game
                                            break;
                        
                    }
-                  else
-                        
-                       Console.WriteLine("Gameover {0} {1}.\n", count, 
-                                           count == 3 ? "try" : "tries");
-                        break;
+                   else
+                   {
+                       return;
+                   }    
                                            
                    
                }
