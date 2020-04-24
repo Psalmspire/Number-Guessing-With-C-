@@ -12,9 +12,9 @@ namespace Number_Guessing_Game
            
             Random random = new Random();
 
-            int EasyLevel = random.Next(1, 10);
-            int MediumLevel = random.Next(1, 20);
-            int HardLevel = random.Next(1, 50);
+            int EasyLevel = random.Next(1, 11);
+            int MediumLevel = random.Next(1, 21);
+            int HardLevel = random.Next(1, 51);
             int Guess = 0;
 
            Console.WriteLine("Welcome to the Number Guessing Game.");
@@ -50,6 +50,7 @@ namespace Number_Guessing_Game
                             Console.WriteLine("You have {0} {1}.\n", 6 - count, 
                                            count == 5  ? "try left" : "tries left");    
                             ++count;
+                            
 
                         }
                        
@@ -70,7 +71,7 @@ namespace Number_Guessing_Game
                        Console.WriteLine("You got it right! The number was " + EasyLevel);
                        Console.WriteLine("It took you {0} {1}.\n", count, 
                                            count == 1 ? "try" : "tries");
-                                           break; 
+                                           
                    }
                    else
                    {
