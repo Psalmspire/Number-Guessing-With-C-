@@ -71,6 +71,7 @@ namespace Number_Guessing_Game
                        Console.WriteLine("You got it right! The number was " + EasyLevel);
                        Console.WriteLine("It took you {0} {1}.\n", count, 
                                            count == 1 ? "try" : "tries");
+                                           break;
                                            
                    }
                    else
